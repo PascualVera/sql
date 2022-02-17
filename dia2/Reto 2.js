@@ -16,7 +16,7 @@ connection.connect(function (error) {
 let sql
 
 sql =
-	"SELECT student_id,mark FROM marks WHERE student_id BETWEEN 1 AND 20 OR mark > 8 AND date BETWEEN '2021-01-01' AND '2021-12-31'"
+	"SELECT student_id,mark FROM marks WHERE student_id BETWEEN 1 AND 20 OR (mark > 8 AND date BETWEEN '2021-01-01' AND '2021-12-31')"
 
 connection.query(sql, function (err, result) {
 	if (err) {
