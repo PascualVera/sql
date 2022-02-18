@@ -36,8 +36,8 @@ connection.query(sql, (err, result) => {
 	}
 })
 
-sql = ` SELECT COUNT(students.first_name) AS studentsNumber, grupo.nombre AS grupo, teachers.first_name, teachers.last_name, subjects.title FROM students
-JOIN grupo ON(students.id_student = grupo.groups_id)
+sql = ` SELECT COUNT(students.id_student) AS studentsNumber, teachers.first_name, teachers.last_name, subjects.title FROM students
+JOIN grupo ON(students.group_id = grupo.groups_id)
 JOIN subjects_teacher AS st ON(grupo.groups_id = st.group_id)
 JOIN teachers ON (st.teacher_id = teachers.id_teacher)
 JOIN subjects ON (st.subject_id = subjects.subject_id)
