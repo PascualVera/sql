@@ -14,7 +14,7 @@ connection.connect(function (error) {
 	}
 })
 let sql
-////////////////////////////////////////Crear Tablas
+//Tablas
 
 // sql =
 // 	"CREATE TABLE students (id_student INT AUTO_INCREMENT PRIMARY KEY ,first_name VARCHAR(12) ,last_name VARCHAR(45), group_id INT)"
@@ -53,7 +53,7 @@ let sql
 // 	}
 // })
 
-//Insertar datos en tabla Grupo
+//Inserts
 
 // sql = `INSERT INTO escenario.groups (name) VALUES ('Griffindor')`
 
@@ -505,6 +505,7 @@ let sql
 // 		console.log(result)
 // 	}
 // })
+//RETO 3
 sql = "UPDATE marks SET mark=0"
 
 connection.query(sql, function (err, result) {
