@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/alumnos.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>HOGWARTS</h1>
+			<nav class="dropdown">
+				<button class="dropdown_buttom">Sections</button>
+				<div class="dropdown_menu">
+					<a class="dropdown_links" href="index.html">Home</a>
+					<a class="dropdown_links" href="alumnos.html">Alumnos</a>
+					<a class="dropdown_links" href="notas.html">Notas</a>
+					<a class="dropdown_links" href="info.html">Escuela</a>
+				</div>
+			</nav>
+		</header>
+		<main class="container">
+			<div class="form_container">
+				<form action="student_edit" class="form">
+					<div class="input_edit">
+						<input type="text" class="input" id="name" placeholder="Name" /><label for="name"
+							>*</label
+						>
+					</div>
+					<div class="input_edit">
+						<input type="text" class="input" id="surname" placeholder="Surname" /><label
+							for="surname"
+							>*</label
+						>
+					</div>
+					<div class="input_edit">
+						<input
+							type="text"
+							class="input"
+							id="year"
+							placeholder="Ingress year (YYYY-MM-DD)"
+						/><label for="year">*</label>
+					</div>
+					<div class="input_edit">
+						<input type="text" class="input" id="group_id" placeholder="Grupo" /><label
+							for="group_id"
+							>*</label
+						>
+					</div>
+					<div class="input_edit">
+						<input type="text" class="input" id="id" placeholder="ID" /><label for="id">*</label>
+					</div>
+				</form>
+				<p class="required">*campos obligatorios</p>
+				<div class="button_container">
+					<button id="mostrar" class="boton">Mostrar</button>
+					<button id="crear" class="boton">Crear</button>
+					<button id="eliminar" class="boton">Eliminar</button>
+					<button id="actualizar" class="boton">Actualizar</button>
+				</div>
+			</div>
+			<div class="lista_alumnos"></div>
+		</main>
+
+		<script src="../fetchAlumnos.js"></script>
+	</body>
+</html>

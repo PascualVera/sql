@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/notas.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>HOGWARTS</h1>
+			<nav class="dropdown">
+				<button class="dropdown_buttom">Sections</button>
+				<div class="dropdown_menu">
+					<a class="dropdown_links" href="index.html">Home</a>
+					<a class="dropdown_links" href="alumnos.html">Alumnos</a>
+					<a class="dropdown_links" href="notas.html">Notas</a>
+					<a class="dropdown_links" href="info.html">Escuela</a>
+				</div>
+			</nav>
+		</header>
+		<main class="container">
+			<div class="form_container">
+				<form class="form" action="marks">
+					<input id="id" type="text" class="input" placeholder="ID alumno" />
+					<input id="subject" type="text" class="input" placeholder="ID asignatura" />
+					<input id="date" type="text" class="input" placeholder="Fecha" />
+					<input id="mark" type="text" class="input" placeholder="Nota" />
+					<input id="mark_id" class="input" type="text" placeholder="ID nota" />
+				</form>
+				<div class="button_container">
+					<button id="mostrar" class="boton">Mostrar</button>
+					<button id="crear" class="boton">Crear</button>
+					<button id="editar" class="boton">Editar</button>
+					<button id="borrar" class="boton">Borrar</button>
+				</div>
+			</div>
+			<div class="list_container">
+				<button class="close">+</button>
+				<div class="lista_info"></div>
+			</div>
+		</main>
+
+		<script src="../fetchNotas.js"></script>
+	</body>
+</html>
