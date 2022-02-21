@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harry-potter");
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Ubuntu", sans-serif;
+}
+.header {
+	font-size: 25px;
+	height: 15vh;
+	color: aliceblue;
+	background-color: black;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+.header h1 {
+	font-family: "Harry Potter", serif;
+}
+.container {
+	display: flex;
+	align-items: center;
+	height: 85vh;
+	background-image: url(../Media/GettyImages-169676389.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	gap: 30px;
+	padding-left: 40px;
+}
+.form_container {
+	display: flex;
+	flex-direction: column;
+	width: 45vw;
+	height: 80vh;
+	background-color: rgba(0, 0, 0, 0.568);
+	padding: 10px;
+	padding: 20px;
+	border-radius: 10px;
+	justify-content: space-around;
+}
+.alertStyle {
+	background-color: red;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	padding-left: 6px;
+	font-size: 18px;
+	width: 300px;
+	height: 30px;
+}
+.alertStyle:focus {
+	background: none;
+}
+.alertStyle::placeholder {
+	color: white;
+}
+.input {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	padding-left: 6px;
+	font-size: 18px;
+	width: 300px;
+	height: 30px;
+	background: none;
+	color: white;
+}
+.input::placeholder {
+	color: white;
+}
+
+.button_container {
+	display: flex;
+	gap: 20px;
+	width: 500px;
+	height: 90px;
+}
+.boton {
+	width: 130px;
+	height: 40px;
+	font-size: 15px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: azure;
+	font-weight: bold;
+}
+.boton:hover {
+	color: white;
+	background-color: rgb(24, 2, 44);
+	transition: 0.3s;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown_buttom {
+	cursor: pointer;
+	border: none;
+	background: none;
+	color: whitesmoke;
+	font-size: 22px;
+	padding: 4px;
+	align-items: center;
+}
+.dropdown_buttom:hover {
+	color: white;
+	text-shadow: 0px 0px 4px white;
+}
+.dropdown_menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: absolute;
+	left: 0;
+	top: calc(100% +0.25rem);
+	color: white;
+	font-size: 18px;
+
+	opacity: 0;
+	transition: opacity 200ms ease;
+	background-color: black;
+	width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.dropdown_links {
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+}
+.dropdown > .dropdown_buttom:focus + .dropdown_menu {
+	opacity: 1;
+}
+
+/*Container alumnos*/
+.lista_info {
+	display: flex;
+	width: 43vw;
+	height: 77vh;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.788);
+	padding: 20px;
+	opacity: 0;
+	border-radius: 20px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+	width: inherit;
+	height: inherit;
+	gap: 15px;
+}
+.list span {
+	display: flex;
+	gap: 20px;
+	width: inherit;
+}
+.list span p {
+	text-align: left;
+	width: 17vw;
+}
+.list span:first-child {
+	text-decoration: underline 2px white;
+	font-size: 24px;
+}

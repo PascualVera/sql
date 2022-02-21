@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harry-potter");
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Ubuntu", sans-serif;
+	overflow: hidden;
+}
+.header {
+	font-size: 25px;
+	height: 15vh;
+	color: aliceblue;
+	background-color: black;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+.header h1 {
+	font-family: "Harry Potter", serif;
+	margin-top: 40px;
+}
+.container {
+	display: flex;
+	align-items: center;
+	height: 85vh;
+	background-image: url(../Media/GettyImages-169676389.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	gap: 30px;
+	padding-left: 40px;
+}
+.form_container {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	height: 80vh;
+	background-color: rgba(0, 0, 0, 0.778);
+	padding: 10px;
+	padding: 20px;
+	border-radius: 10px;
+	justify-content: space-around;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	height: inherit;
+	width: inherit;
+	gap: 20px;
+	margin-top: 20px;
+}
+.input {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	padding-left: 6px;
+	font-size: 18px;
+	width: 300px;
+	height: 30px;
+	background: none;
+	color: white;
+}
+.input::placeholder {
+	color: whitesmoke;
+}
+
+.button_container {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 50px;
+}
+.boton {
+	width: 130px;
+	height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	font-weight: bold;
+	border: none;
+}
+.boton:hover {
+	color: white;
+	background-color: rgb(24, 2, 44);
+	transition: 0.1s;
+	box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.301) inset;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown_buttom {
+	cursor: pointer;
+	border: none;
+	background: none;
+	color: whitesmoke;
+	font-size: 22px;
+	padding: 4px;
+}
+.dropdown_buttom:hover {
+	color: white;
+	text-shadow: 0px 0px 4px white;
+}
+.dropdown_menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: absolute;
+	left: 0;
+	top: calc(100% +0.25rem);
+	color: white;
+	font-size: 18px;
+	opacity: 0;
+	transition: opacity 200ms ease;
+	background-color: black;
+	width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+	z-index: -1;
+}
+.dropdown_links {
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+}
+.dropdown_buttom:focus + .dropdown_menu {
+	opacity: 1;
+	z-index: 1;
+}
+.dropdown_menu:hover {
+	z-index: 1;
+}
+
+/*Container alumnos*/
+.lista_info {
+	display: flex;
+	width: 55vw;
+	height: 77vh;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.788);
+	padding: 20px;
+	opacity: 0;
+	border-radius: 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	width: inherit;
+	height: inherit;
+	gap: 15px;
+}
+.list span {
+	display: flex;
+	gap: 10px;
+	width: inherit;
+}
+.list span p {
+	text-align: left;
+	width: 10vw;
+}
+.list span:first-child {
+	text-decoration: underline 2px white;
+	font-size: 22px;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f14f;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(0, 0, 0);
+}
+.list_container {
+	position: relative;
+	display: flex;
+	width: 56vw;
+	height: 78vh;
+	justify-content: center;
+	align-items: center;
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: black;
+	width: 24px;
+	height: 24px;
+	font-size: 25px;
+	text-align: center;
+	align-items: center;
+	border-radius: 15px;
+	transform: rotateZ(45deg);
+
+	transition: transform 0.2s;
+	background-color: black;
+	border: none;
+	color: rgba(240, 248, 255, 0.685);
+	z-index: 1;
+}
+.close:hover {
+	color: aliceblue;
+}

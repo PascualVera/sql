@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/info.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>HOGWARTS</h1>
+			<nav class="dropdown">
+				<button class="dropdown_buttom">Sections</button>
+				<div class="dropdown_menu">
+					<a class="dropdown_links" href="index.html">Home</a>
+					<a class="dropdown_links" href="alumnos.html">Alumnos</a>
+					<a class="dropdown_links" href="notas.html">Notas</a>
+					<a class="dropdown_links" href="info.html">Escuela</a>
+				</div>
+			</nav>
+		</header>
+		<main class="container">
+			<div class="form_container">
+				<input type="text" class="input" id="id" placeholder="ID profesor o alumno" />
+				<div class="button_container">
+					<button id="media" class="boton">Calcular Media</button>
+					<button id="alumno" class="boton">Ver Alumnos</button>
+					<button id="profesor" class="boton">Ver Profesores</button>
+				</div>
+			</div>
+
+			<div class="lista_info"></div>
+		</main>
+		<script src="../fetchInfo.js"></script>
+	</body>
+</html>

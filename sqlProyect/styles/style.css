@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harry-potter");
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Harry Potter", sans-serif;
+}
+.header {
+	display: flex;
+	font-size: 30px;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(
+		0deg,
+		rgba(42, 43, 51, 1) 6%,
+		rgba(42, 43, 51, 0.4) 40%,
+		rgba(163, 171, 186, 0) 65%,
+		rgba(202, 207, 216, 0) 90%
+	);
+}
+
+#myVideo {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.vsc-controller {
+	display: none;
+	z-index: -90;
+}
+
+.header div {
+	color: aliceblue;
+	font-size: 40px;
+	transform: scale(1.2);
+	transition: 1s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.title {
+	width: 800px;
+	margin-bottom: 70px;
+}
+.logo {
+	width: 200px;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 30px;
+	height: 100vh;
+	align-items: center;
+	font-family: "Ubuntu", sans-serif;
+	background: rgb(42, 43, 51);
+	background: linear-gradient(180deg, rgba(42, 43, 51, 1) 20%, rgb(77, 82, 92, 1) 60%);
+	overflow: hidden;
+}
+.container a {
+	position: relative;
+	width: 280px;
+}
+.section {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 280px;
+	height: 410px;
+	transition: 0.4s;
+	position: relative;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 2px 2px 10px 3px black inset;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+a img {
+	position: absolute;
+	bottom: 0px;
+	left: -78px;
+	top: -78px;
+	width: 450px;
+	border-radius: 20px;
+	opacity: 0.8;
+	-webkit-filter: grayscale(20%);
+	filter: grayscale(40%);
+}
+
+.s3 {
+	background-image: url(../Media/1893837.jpg);
+}
+
+.s2 {
+	background-image: url(../Media/HarryPotterJKROwlingSeverusSnape.png);
+	background-size: cover;
+}
+.s1 {
+	background-image: url(../Media/Harry-potter-y-la-piedra-filosofal-031.jpg);
+	background-position: -150px;
+}
+
+a {
+	text-decoration: none;
+}
+.section h1 {
+	font-family: "Harry Potter", sans-serif;
+	font-size: 60px;
+	padding: 10px;
+	background-color: rgb(255, 187, 0);
+	color: transparent;
+	text-shadow: 1px 3px 6px 1px #ffddb0 inset;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	letter-spacing: 1px;
+	transition: transform 0.8s;
+}
+.section:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+.section:hover h1 {
+	background-color: rgba(240, 205, 111, 0.966);
+	color: transparent;
+	text-shadow: 1px 1px 6px #ffddb0d2;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	z-index: 90;
+	opacity: 1;
+	animation: disappear 2s ease forwards;
+}
+@keyframes disappear {
+	0% {
+		transform: scale(1, 1) translateY(0) rotateZ(1deg);
+	}
+	3% {
+		transform: rotateZ(-1deg);
+	}
+	5% {
+		transform: rotateZ(1deg);
+	}
+	8% {
+		transform: rotateZ(-1deg);
+	}
+	10% {
+		transform: translateX(0) rotateZ(2deg);
+	}
+	15% {
+		transform: rotateZ(-2deg);
+	}
+	30% {
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(600px);
+	}
+	50% {
+		transform: translateY(-800px);
+	}
+	58% {
+		transform: translateX(-1700px);
+	}
+	65% {
+		transform: translateY();
+	}
+	100% {
+		transform: scale(1, 1.02) translateY(-160px);
+	}
+}
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: rgba(128, 128, 128, 0.671);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
